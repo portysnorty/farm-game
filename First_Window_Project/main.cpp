@@ -81,9 +81,9 @@ int main(){
     // Adding the farm scene
     image_surface = SDL_LoadBMP("Farmies.bmp");
     SDL_BlitSurface(image_surface, NULL, screen_surface, NULL);
-    music_jazz= SDL_LoadMUS("Jazz.mp3")
+    music_jazz= SDL_LoadMUS("Jazz.mp3");
     SDL_UpdateWindowSurface(window);
-    Mix_PlayChannel(-1,g)
+    Mix_PlayChannel(-1,music_jazz,0);
     int whichAnimal = 0;
     Animal* the_animal = grab_animal(whichAnimal);
 
